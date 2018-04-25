@@ -1,0 +1,84 @@
+<div class="container">
+  <h2>Registration Form</h2>
+  <form (ng-submit)="register()">
+  <div class="form-group">
+      <label for="employeeId">Employee Id:</label>
+      <input type="number" class="form-control" id="employeeId" placeholder="Enter Employee Id" [(ngModel)]="employee.employeeId" required>
+    </div>
+   <div class="form-group">
+      <label for="firstName">First Name:</label>
+      <input type="text" class="form-control" id="firstName" placeholder="Enter FirstName" [(ngModel)]="employee.firstName" required>
+    </div>
+    
+     <div class="form-group">
+      <label for="lastName">Last Name:</label>
+      <input type="text" class="form-control" id="lastName" placeholder="Enter LastName" [(ngModel)]="employee.lastName" required>
+    </div>
+  
+    <div class="form-group">
+      <label for="emailId">Email:</label>
+      <input type="email" class="form-control" id="emailId" placeholder="Enter email" [(ngModel)]="employee.emailId" required>
+    </div>
+    <div class="form-group">
+      <label for="password">Password:</label>
+      <input type="password" class="form-control" id="password" placeholder="Enter password" [(ngModel)]="employee.password" required>
+    </div>
+     <div class="form-group">
+      <label for="noOfYrExperience">Years of Experience:</label>
+      <input type="number" class="form-control" id="noOfYrExperience" placeholder="Employee Experience" [(ngModel)]="employee.noOfYrExperience" required>
+    </div>
+     <div class="form-group">
+      <label for="department">Employee Department:</label>
+      <input type="text" class="form-control" id="department" placeholder="Enter Employee Department" [(ngModel)]="employee.department" required>
+    </div>
+    <div class="form-group">
+      <label for="location">Employee Location:</label>
+      <input type="text" class="form-control" id="location" placeholder="Enter Employee Location" [(ngModel)]="employee.location" required>
+    </div>
+    
+     <div class="form-group">
+      <label for="noOfStudentTaught">Number of Students Taught:</label>
+      <input type="number" class="form-control" id="noOfStudentTaught" placeholder="Number Of students taught" [(ngModel)]="employee.noOfStudentTaught">
+    </div>
+     <div class="form-group">
+      <label for="dateOfJoining">Date Of Joining:</label>
+      <input type="date" class="form-control" id="dateOfJoining" placeholder="Date Of Joining" [(ngModel)]="employee.dateOfJoining">
+    </div>
+     <div class="form-group">
+      <label for="managerId">Manager Id:</label>
+      <input type="number" class="form-control" id="managerId" placeholder="Enter Manager Id" [(ngModel)]="employee.managerId">
+    </div>
+    
+    <div class="form-group">
+      <label for="businessUnit">Business Unit:</label>
+      <input type="text" class="form-control" id="businessUnit" placeholder="Enter Business Unit" [(ngModel)]="employee.businessUnit">
+    </div>
+
+    <div class="form-group">
+      <label for="region">Region</label>
+      <input type="region" class="form-control" id="region" placeholder="Enter Region" [(ngModel)]="employee.region">
+    </div>
+
+    <div class="form-group">
+      <label for="contactDetails">Manager Id:</label>
+      <input type="number" class="form-control" id="contactDetails" placeholder="Enter Contact Details" [(ngModel)]="employee.contactDetails">
+    </div>
+
+
+    <div class="form-group">
+      <label for="gender">Gender</label>
+      <label class="radio-inline"><input type="radio" [(ngModel)]="employee.gender" value="male">Male</label>
+    <label class="radio-inline"><input type="radio" [(ngModel)]="employee.gender" value="female">Female</label>
+    </div>
+    
+    <div class="form-group">
+      <label for="roleName">Role</label>
+      <label class="radio-inline"><input type="radio" [(ngModel)]="employee.roleName" value="tech mentor">Tech Mentor</label>
+    <label class="radio-inline"><input type="radio" [(ngModel)]="employee.roleName" value="hr">HR</label>
+    </div>
+    
+    
+    <button type="submit" class="btn btn-default">Register</button>
+     <!-- <button type="reset" class="btn btn-default">Reset</button>-->
+  </form>
+</div>
